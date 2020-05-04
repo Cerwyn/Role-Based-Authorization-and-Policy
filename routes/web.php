@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+//auth()->loginUsingId();
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/create/thread','ThreadController@create');
+Route::get('/update/thread','ThreadController@edit');
+Route::get('/delete/thread','ThreadController@destroy');
