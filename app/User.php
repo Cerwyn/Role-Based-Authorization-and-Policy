@@ -44,7 +44,7 @@ class User extends Authenticatable
 
     public function assignProfile($profile)
     {
-        return $this->profiles->sync($profile);
+        return $this->profiles()->sync($profile);
     }
 
     public function permissions()
