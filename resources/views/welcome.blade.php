@@ -81,13 +81,26 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    @if(Auth::check())
+                        You're Signin as {{auth()->user()->name}}   
+                    @else
+                        You're not Signin
+                    @endif
+                    
                 </div>
 
                 <div class="links">
-                    <a href="/create/thread">Create a Thread</a>
-                    <a href="/update/thread">Update a Thread</a>
-                    <a href="/delete/thread">Delete a Thread</a>
+                    @can('create', App\User::class)
+                        <a href="/create/user">Create New User</a>
+                    @endcan
+                    
+                    @can('update', auth()->user())
+                        <a href="/update/user/{{auth()->user()->id}}">Update a User</a>
+                    @endcan
+
+                    @can('delete', auth()->user())
+                        <a href="/delete/user/{{auth()->user()->id}}">Delete a User</a>
+                    @endcan
                 </div>
             </div>
         </div>

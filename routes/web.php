@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-//auth()->loginUsingId();
+auth()->loginUsingId(4);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/create/thread','ThreadController@create');
-Route::get('/update/thread','ThreadController@edit');
-Route::get('/delete/thread','ThreadController@destroy');
+Route::get('/create/user','UserController@create');
+Route::get('/update/user/{user}','UserController@edit');
+Route::get('/delete/user/{user}','UserController@destroy');
+
+/**Alternative 2
+ * Route::get('/create/user','UserController@create')->middleware('can:create,App\User');
+ * Route::get('/update/user/{user}','UserController@edit')->middleware('can:update,user');
+ * Route::get('/delete/user/{user}','UserController@destroy')->middleware('can:delete,user');
+ */
