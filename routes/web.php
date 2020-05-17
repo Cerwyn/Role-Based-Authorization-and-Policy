@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-auth()->loginUsingId(3);
+auth()->loginUsingId(1);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
