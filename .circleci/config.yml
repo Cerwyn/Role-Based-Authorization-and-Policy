@@ -46,7 +46,7 @@ jobs:
           name: "Create database and run migration"
           command: |
             touch database/database.sqlite
-            php artisan migrate --env=sqlite
+            php artisan migrate --database=sqlite
 
       - run:
           name: "Generate Passport encryption keys"
