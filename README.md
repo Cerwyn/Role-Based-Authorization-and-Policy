@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://circleci.com/gh/Cerwyn/Role-Based-Authorization-and-Policy/tree/master.svg?style=shield&circle-token=072bd9d99f649f0a023764318f17f849bf4e80fc"/>
+<img src="https://circleci.com/gh/Cerwyn/Role-Based-Authorization-and-Policy/tree/master.svg?style=shield"/>
     
 # Medium
 
