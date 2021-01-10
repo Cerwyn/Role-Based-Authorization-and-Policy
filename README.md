@@ -1,5 +1,5 @@
 <p align="center">
-[![Cerwyn](https://circleci.com/gh/Cerwyn/Role-Based-Authorization-and-Policy/tree/master.svg?style=shield)](https://circleci.com/gh/Cerwyn/Role-Based-Authorization-and-Policy/tree/master)
+[![Cerwyn](https://circleci.com/gh/Cerwyn/Role-Based-Authorization-and-Policy/tree/master.svg?style=shield&circle-token=072bd9d99f649f0a023764318f17f849bf4e80fc)](https://circleci.com/gh/Cerwyn/Role-Based-Authorization-and-Policy/tree/master)
 
 # Medium
 
